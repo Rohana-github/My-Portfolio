@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-black">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-slate-50/90 backdrop-blur-md z-50 border-b border-gray-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <h2 class="text-2xl font-bold text-emerald-600">
+        My Portfolio
+      </h2>
+
+      <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <li><a href="#hero" class="hover:text-emerald-700 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-emerald-700 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-emerald-700 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-emerald-700 transition">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden text-black text-3xl">☰</button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-100 px-6 pb-4">
+      <a href="#hero" class="block py-2 text-gray-700 hover:text-emerald-600">Home</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-emerald-600">About</a>
+      <a href="#projects" class="block py-2 text-gray-700 hover:text-emerald-600">Projects</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-emerald-600">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="min-h-[80vh] flex items-center justify-center px-6 pt-24 pb-10">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Hi, I'm
+          <span class="text-emerald-600">Rohana Taher Chowdhury</span>
+        </h1>
+
+        <p class="text-black text-lg mb-6 leading-relaxed">
+          I am a passionate web developer. I love creating beautiful,
+          responsive, and user-friendly websites using HTML, Tailwind CSS,
+          and JavaScript.
+        </p>
+
+        <div class="flex gap-4">
+          <a href="#contact"
+            class="px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 hover:scale-105 transition duration-300">
+            Contact Me
+          </a>
+
+          <a href="rohana_cv.pdf" 
+            class="px-6 py-3 border border-emerald-400 text-emerald-600 rounded-lg font-semibold 
+            hover:bg-emerald-700 hover:text-white hover:scale-105 transition duration-300">
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <img src="rohana.JPG" alt="Profile Image"
+          class="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-emerald-400 shadow-lg shadow-emerald-500/30 hover:scale-105 transition duration-300" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="px-6 py-10">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-4xl md:text-5xl font-bold text-emerald-600 mb-6">
+        About Me
+      </h2>
+
+      <div class="bg-white rounded-3xl p-10 shadow-lg border border-emerald-200 hover:shadow-emerald-300/50 transition duration-300">
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+          I am a passionate web developer who loves creating modern,
+          responsive, and user-friendly websites. I enjoy working with
+          HTML, Tailwind CSS, and JavaScript to build clean and attractive
+          web pages. My goal is to improve my skills and create useful
+          projects that solve real-life problems.
+        </p>
+
+      </div>
+
+      <!-- Project Images -->
+      <div class="flex flex-wrap justify-center gap-10 mt-8">
+
+        <a href="https://github.com/Rohana-github/portfolio" target="_blank" class="group">
+          <div class="flex flex-col items-center">
+            <img src="rohana.JPG" alt="Portfolio"
+              class="w-40 h-40 object-cover rounded-full border-4 border-emerald-400 shadow-lg hover:scale-110 hover:shadow-emerald-400/50 transition duration-300" />
+            <p class="mt-4 text-emerald-600 font-semibold text-lg">Portfolio</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/Rohana-github/Online-Education" target="_blank" class="group">
+          <div class="flex flex-col items-center">
+            <img src="online.jpg" alt="Online Education"
+              class="w-40 h-40 object-contain rounded-full border-4 border-emerald-400 shadow-lg hover:scale-110 hover:shadow-emerald-400/50 transition duration-300 bg-white" />
+            <p class="mt-4 text-emerald-600 font-semibold text-lg">Online Education</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/Rohana-github/Foodapp-github" target="_blank" class="group">
+          <div class="flex flex-col items-center">
+            <img src="food app.png" alt="Food App"
+              class="w-40 h-40 object-contain rounded-full border-4 border-emerald-400 shadow-lg hover:scale-110 hover:shadow-emerald-400/50 transition duration-300 bg-white" />
+            <p class="mt-4 text-emerald-600 font-semibold text-lg">Food App</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/Rohana-github/Attendance-system" target="_blank" class="group">
+          <div class="flex flex-col items-center">
+            <img src="attendance.jpeg" alt="Attendance system"
+              class="w-40 h-40 object-contain rounded-full border-4 border-emerald-400 shadow-lg hover:scale-110 hover:shadow-emerald-400/50 transition duration-300 bg-white" />
+            <p class="mt-4 text-emerald-600 font-semibold text-lg">Attendance System</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/Rohana-github/Chatbot" target="_blank" class="group">
+          <div class="flex flex-col items-center">
+            <img src="chatbot.jpg" alt="Chatbot"
+              class="w-40 h-40 object-cover rounded-full border-4 border-emerald-400 shadow-lg hover:scale-110 hover:shadow-emerald-400/50 transition duration-300" />
+            <p class="mt-4 text-emerald-600 font-semibold text-lg">Chatbot</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="px-6 py-10">
+
+    <div class="max-w-6xl mx-auto text-center mb-10">
+      <h2 class="text-4xl md:text-5xl font-bold text-emerald-600 mb-4">
+        My Projects
+      </h2>
+
+      <p class="text-gray-700 text-lg">
+        Here are some of my web development projects.
+      </p>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="max-w-6xl mx-auto bg-white border border-emerald-200 rounded-3xl p-8 shadow-lg hover:shadow-emerald-300/50 transition duration-300 mb-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <div class="border border-emerald-300 rounded-2xl overflow-hidden h-[350px]">
+          <img src="attendance.jpeg" alt="Attendance Project" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="space-y-6">
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h3 class="text-3xl font-bold text-emerald-600">
+              Attendance System
+            </h3>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              This is an attendance website where students' attendance and attendance
+              percentages are calculated.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h4 class="text-xl font-bold text-emerald-600 mb-4">
+              Tools Used
+            </h4>
+
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">HTML</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">CSS</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">JavaScript</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">PHP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 2 -->
+    <div class="max-w-6xl mx-auto bg-white border border-emerald-200 rounded-3xl p-8 shadow-lg hover:shadow-emerald-300/50 transition duration-300 mb-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <div class="border border-emerald-300 rounded-2xl overflow-hidden h-[350px]">
+          <img src="online.jpg" alt="Online Education Project" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="space-y-6">
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h3 class="text-3xl font-bold text-emerald-600">
+              Online Education
+            </h3>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              This is an online education website created with course sections,
+              tutor details, playlist pages, and a responsive user-friendly design.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h4 class="text-xl font-bold text-emerald-600 mb-4">
+              Tools Used
+            </h4>
+
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">HTML</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">CSS</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">JavaScript</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">PHP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 3 -->
+    <div class="max-w-6xl mx-auto bg-white border border-emerald-200 rounded-3xl p-8 shadow-lg hover:shadow-emerald-300/50 transition duration-300">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <div class="border border-emerald-300 rounded-2xl overflow-hidden h-[350px] bg-white">
+          <img src="food app.png" alt="Food App Project" class="w-full h-full object-contain" />
+        </div>
+
+        <div class="space-y-6">
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h3 class="text-3xl font-bold text-emerald-600">
+              Food App
+            </h3>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              This is a simple food app project that displays food items,
+              prices, and basic ordering-style interface with a clean layout.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-2xl p-6">
+            <h4 class="text-xl font-bold text-emerald-600 mb-4">
+              Tools Used
+            </h4>
+
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">HTML</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">CSS</span>
+              <span class="bg-emerald-600 text-white px-5 py-2 rounded-full">JavaScript</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="px-6 py-10">
+
+    <div class="max-w-6xl mx-auto text-center mb-10">
+      <h2 class="text-4xl md:text-5xl font-bold text-emerald-600 mb-4">
+        Contact Us
+      </h2>
+
+      <p class="text-gray-700 text-lg">
+        Feel free to contact me anytime.
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto bg-white border border-emerald-200 rounded-3xl p-8 shadow-lg hover:shadow-emerald-300/50 transition duration-300">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <!-- LEFT SIDE PERSONAL CARD -->
+        <div class="flex justify-center">
+
+          <div class="w-full max-w-sm bg-white rounded-3xl overflow-hidden shadow-2xl border border-emerald-200">
+
+            <div class="relative h-28 bg-emerald-400">
+              <div class="absolute top-0 left-0 w-full">
+                <div class="h-20 bg-emerald-500 rounded-b-[60%]"></div>
+                <div class="h-16 bg-white rounded-b-[60%] -mt-10"></div>
+              </div>
+            </div>
+
+            <div class="relative flex justify-center -mt-14">
+              <div class="w-28 h-28 rounded-full bg-white border-4 border-emerald-500 flex items-center justify-center shadow-lg">
+                <img src="rohana.JPG" alt="Profile" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+
+            <div class="text-center px-8 py-6">
+
+              <h2 class="text-2xl font-bold text-emerald-600">
+                Rohana Taher Chowdhury
+              </h2>
+
+              <p class="inline-block mt-2 bg-emerald-500 text-white text-sm px-4 py-1 rounded-full">
+                Web Developer
+              </p>
+
+              <div class="mt-8 space-y-3 text-left text-gray-700">
+
+                <p class="break-words">
+                  <span class="font-bold text-emerald-600">EMAIL :</span>
+                  sadafchowdhury458@gmail.com
+                </p>
+
+                <p>
+                  <span class="font-bold text-emerald-600">PHONE :</span>
+                  +8801858477522
+                </p>
+
+                <p class="break-words">
+                  <span class="font-bold text-emerald-600">LOCATION :</span>
+                  Soraipara Loharpul, Dowlot Chowdhury Bari, Chattogram, Bangladesh
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="h-8 bg-emerald-500"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE USER FORM -->
+        <div class="space-y-6">
+
+          <div class="bg-slate-50 text-center border border-emerald-200 rounded-2xl p-6">
+            <h3 class="text-3xl font-bold text-emerald-600">
+              User Info
+            </h3>
+          </div>
+
+          <div class="bg-slate-50 border border-emerald-200 rounded-3xl p-8">
+
+            <form id="contactForm" class="space-y-5">
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <input type="text" placeholder="First Name" required
+                  class="w-full bg-white text-black border border-emerald-300 rounded-xl p-4 focus:outline-none focus:border-emerald-600" />
+
+                <input type="text" placeholder="Last Name" required
+                  class="w-full bg-white text-black border border-emerald-300 rounded-xl p-4 focus:outline-none focus:border-emerald-600" />
+
+              </div>
+
+              <input type="email" placeholder="Email Address" required
+                class="w-full bg-white text-black border border-emerald-300 rounded-xl p-4 focus:outline-none focus:border-emerald-600" />
+
+              <input type="text" placeholder="Phone Number" required
+                class="w-full bg-white text-black border border-emerald-300 rounded-xl p-4 focus:outline-none focus:border-emerald-600" />
+
+              <textarea rows="5" placeholder="Write your message..." required
+                class="w-full bg-white text-black border border-emerald-300 rounded-xl p-4 focus:outline-none focus:border-emerald-600"></textarea>
+
+              <button type="submit"
+                class="w-full bg-emerald-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-emerald-700 hover:scale-105 transition duration-300">
+                Send Message
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Message sent successfully!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
